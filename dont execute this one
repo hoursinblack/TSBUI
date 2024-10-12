@@ -1,0 +1,1790 @@
+-- Instances: 147 | Scripts: 0 | Modules: 1
+local NexUI = {};
+
+-- NRay
+NexUI["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+NexUI["1"]["IgnoreGuiInset"] = true;
+NexUI["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+NexUI["1"]["Name"] = [[NRay]];
+NexUI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- NRay.TopBar
+NexUI["2"] = Instance.new("Frame", NexUI["1"]);
+NexUI["2"]["BorderSizePixel"] = 0;
+NexUI["2"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["2"]["LayoutOrder"] = 2;
+NexUI["2"]["Size"] = UDim2.new(0.5404488444328308, 0, 0.1739015281200409, 0);
+NexUI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["2"]["Position"] = UDim2.new(0.23000000417232513, 0, -0.1899999976158142, 0);
+NexUI["2"]["Name"] = [[TopBar]];
+
+-- NRay.TopBar.UICorner
+NexUI["3"] = Instance.new("UICorner", NexUI["2"]);
+NexUI["3"]["CornerRadius"] = UDim.new(0.10000000149011612, 0);
+
+-- NRay.TopBar.ScrollingFrame
+NexUI["4"] = Instance.new("ScrollingFrame", NexUI["2"]);
+NexUI["4"]["Active"] = true;
+NexUI["4"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+NexUI["4"]["BorderSizePixel"] = 0;
+NexUI["4"]["CanvasSize"] = UDim2.new(0.10000000149011612, 0, 0, 0);
+NexUI["4"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 36);
+NexUI["4"]["AutomaticCanvasSize"] = Enum.AutomaticSize.X;
+NexUI["4"]["BackgroundTransparency"] = 1;
+NexUI["4"]["Size"] = UDim2.new(0.915977954864502, 0, 0.5196850299835205, 0);
+NexUI["4"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["4"]["ScrollBarThickness"] = 0;
+NexUI["4"]["Position"] = UDim2.new(0, 0, 0.4803149700164795, 0);
+
+-- NRay.TopBar.ScrollingFrame.UIListLayout
+NexUI["5"] = Instance.new("UIListLayout", NexUI["4"]);
+NexUI["5"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+NexUI["5"]["FillDirection"] = Enum.FillDirection.Horizontal;
+NexUI["5"]["Padding"] = UDim.new(0.009999999776482582, 0);
+NexUI["5"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- NRay.TopBar.ScrollingFrame.UIPadding
+NexUI["6"] = Instance.new("UIPadding", NexUI["4"]);
+NexUI["6"]["PaddingLeft"] = UDim.new(0.014999999664723873, 0);
+
+-- NRay.TopBar.DropShadowHolder
+NexUI["7"] = Instance.new("Frame", NexUI["2"]);
+NexUI["7"]["ZIndex"] = 0;
+NexUI["7"]["BorderSizePixel"] = 0;
+NexUI["7"]["BackgroundTransparency"] = 1;
+NexUI["7"]["Size"] = UDim2.new(1, 0, 1, 0);
+NexUI["7"]["Name"] = [[DropShadowHolder]];
+
+-- NRay.TopBar.DropShadowHolder.DropShadow
+NexUI["8"] = Instance.new("ImageLabel", NexUI["7"]);
+NexUI["8"]["ZIndex"] = 0;
+NexUI["8"]["BorderSizePixel"] = 0;
+NexUI["8"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+NexUI["8"]["ScaleType"] = Enum.ScaleType.Slice;
+NexUI["8"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["8"]["ImageTransparency"] = 0.5;
+NexUI["8"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+NexUI["8"]["Image"] = [[rbxassetid://6014261993]];
+NexUI["8"]["Size"] = UDim2.new(1, 47, 1, 47);
+NexUI["8"]["Name"] = [[DropShadow]];
+NexUI["8"]["BackgroundTransparency"] = 1;
+NexUI["8"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- NRay.TopBar.UIGradient
+NexUI["9"] = Instance.new("UIGradient", NexUI["2"]);
+NexUI["9"]["Rotation"] = 90;
+NexUI["9"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(139, 139, 139)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.TopBar.TopBar
+NexUI["a"] = Instance.new("Frame", NexUI["2"]);
+NexUI["a"]["BorderSizePixel"] = 0;
+NexUI["a"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["a"]["LayoutOrder"] = 2;
+NexUI["a"]["Size"] = UDim2.new(0.9983566999435425, 0, 0.05511785298585892, 0);
+NexUI["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["a"]["Position"] = UDim2.new(0, 0, 0.4645671844482422, 0);
+NexUI["a"]["Name"] = [[TopBar]];
+
+-- NRay.TopBar.TopBar.UIGradient
+NexUI["b"] = Instance.new("UIGradient", NexUI["a"]);
+NexUI["b"]["Rotation"] = -90;
+NexUI["b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(139, 139, 139)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.TopBar.ProfileMenu
+NexUI["c"] = Instance.new("Frame", NexUI["2"]);
+NexUI["c"]["BorderSizePixel"] = 0;
+NexUI["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["c"]["BackgroundTransparency"] = 1;
+NexUI["c"]["Size"] = UDim2.new(0.9983566999435425, 0, 0.4645672142505646, 0);
+NexUI["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["c"]["Name"] = [[ProfileMenu]];
+
+-- NRay.TopBar.ProfileMenu.PlayerProfile
+NexUI["d"] = Instance.new("ImageButton", NexUI["c"]);
+NexUI["d"]["BorderSizePixel"] = 0;
+NexUI["d"]["AutoButtonColor"] = false;
+NexUI["d"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["d"]["Size"] = UDim2.new(0.23481373488903046, 0, 0.682426393032074, 0);
+NexUI["d"]["Name"] = [[PlayerProfile]];
+NexUI["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["d"]["Position"] = UDim2.new(0.015024710446596146, 0, 0.18421050906181335, 0);
+
+-- NRay.TopBar.ProfileMenu.PlayerProfile.UICorner
+NexUI["e"] = Instance.new("UICorner", NexUI["d"]);
+NexUI["e"]["CornerRadius"] = UDim.new(0.30000001192092896, 0);
+
+-- NRay.TopBar.ProfileMenu.PlayerProfile.UIGradient
+NexUI["f"] = Instance.new("UIGradient", NexUI["d"]);
+NexUI["f"]["Rotation"] = 90;
+NexUI["f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(154, 154, 154)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(231, 231, 231))};
+
+-- NRay.TopBar.ProfileMenu.PlayerProfile.ImageLabel
+NexUI["10"] = Instance.new("ImageLabel", NexUI["d"]);
+NexUI["10"]["BorderSizePixel"] = 0;
+NexUI["10"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["10"]["Size"] = UDim2.new(0.16644950211048126, 0, 0.8032786846160889, 0);
+NexUI["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["10"]["Position"] = UDim2.new(0.03799999877810478, 0, 0.1420000046491623, 0);
+
+-- NRay.TopBar.ProfileMenu.PlayerProfile.ImageLabel.UIAspectRatioConstraint
+NexUI["11"] = Instance.new("UIAspectRatioConstraint", NexUI["10"]);
+NexUI["11"]["AspectRatio"] = 0.9842342734336853;
+
+-- NRay.TopBar.ProfileMenu.PlayerProfile.ImageLabel.UICorner
+NexUI["12"] = Instance.new("UICorner", NexUI["10"]);
+NexUI["12"]["CornerRadius"] = UDim.new(100, 0);
+
+-- NRay.TopBar.ProfileMenu.PlayerProfile.ImageLabel.UIGradient
+NexUI["13"] = Instance.new("UIGradient", NexUI["10"]);
+NexUI["13"]["Rotation"] = 90;
+NexUI["13"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(213, 213, 213)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.TopBar.ProfileMenu.PlayerProfile.TextLabel
+NexUI["14"] = Instance.new("TextLabel", NexUI["d"]);
+NexUI["14"]["TextWrapped"] = true;
+NexUI["14"]["BorderSizePixel"] = 0;
+NexUI["14"]["TextScaled"] = true;
+NexUI["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["14"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["14"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+NexUI["14"]["TextSize"] = 14;
+NexUI["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["14"]["AutomaticSize"] = Enum.AutomaticSize.X;
+NexUI["14"]["Size"] = UDim2.new(0.7192937135696411, 0, 0.41530051827430725, 0);
+NexUI["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["14"]["Text"] = [[PlayerName]];
+NexUI["14"]["BackgroundTransparency"] = 1;
+NexUI["14"]["Position"] = UDim2.new(0.23957718908786774, 0, 0.27320244908332825, 0);
+
+-- NRay.TopBar.ProfileMenu.UIListLayout
+NexUI["15"] = Instance.new("UIListLayout", NexUI["c"]);
+NexUI["15"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+NexUI["15"]["FillDirection"] = Enum.FillDirection.Horizontal;
+NexUI["15"]["Padding"] = UDim.new(0.014999999664723873, 0);
+NexUI["15"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- NRay.TopBar.ProfileMenu.UIPadding
+NexUI["16"] = Instance.new("UIPadding", NexUI["c"]);
+NexUI["16"]["PaddingLeft"] = UDim.new(0.014000000432133675, 0);
+
+-- NRay.TopBar.ProfileMenu.Clock
+NexUI["17"] = Instance.new("ImageButton", NexUI["c"]);
+NexUI["17"]["BorderSizePixel"] = 0;
+NexUI["17"]["AutoButtonColor"] = false;
+NexUI["17"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["17"]["Size"] = UDim2.new(0.10328257083892822, 0, 0.682426393032074, 0);
+NexUI["17"]["Name"] = [[Clock]];
+NexUI["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["17"]["Position"] = UDim2.new(0.26031631231307983, 0, 0.158786803483963, 0);
+
+-- NRay.TopBar.ProfileMenu.Clock.UICorner
+NexUI["18"] = Instance.new("UICorner", NexUI["17"]);
+NexUI["18"]["CornerRadius"] = UDim.new(0.30000001192092896, 0);
+
+-- NRay.TopBar.ProfileMenu.Clock.UIGradient
+NexUI["19"] = Instance.new("UIGradient", NexUI["17"]);
+NexUI["19"]["Rotation"] = 90;
+NexUI["19"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(154, 154, 154)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(231, 231, 231))};
+
+-- NRay.TopBar.ProfileMenu.Clock.TextLabel
+NexUI["1a"] = Instance.new("TextLabel", NexUI["17"]);
+NexUI["1a"]["TextWrapped"] = true;
+NexUI["1a"]["BorderSizePixel"] = 0;
+NexUI["1a"]["TextScaled"] = true;
+NexUI["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["1a"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+NexUI["1a"]["TextSize"] = 14;
+NexUI["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["1a"]["AutomaticSize"] = Enum.AutomaticSize.X;
+NexUI["1a"]["Size"] = UDim2.new(0.33195531368255615, 0, 0.41530051827430725, 0);
+NexUI["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["1a"]["Text"] = [[00:00]];
+NexUI["1a"]["BackgroundTransparency"] = 1;
+NexUI["1a"]["Position"] = UDim2.new(0.21512815356254578, 0, 0.27320244908332825, 0);
+
+-- NRay.TopBar.ProfileMenu.Title
+NexUI["1b"] = Instance.new("ImageButton", NexUI["c"]);
+NexUI["1b"]["BorderSizePixel"] = 0;
+NexUI["1b"]["AutoButtonColor"] = false;
+NexUI["1b"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["1b"]["Size"] = UDim2.new(0.23481373488903046, 0, 0.682426393032074, 0);
+NexUI["1b"]["Name"] = [[Title]];
+NexUI["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["1b"]["Position"] = UDim2.new(0.015024710446596146, 0, 0.18421050906181335, 0);
+
+-- NRay.TopBar.ProfileMenu.Title.UICorner
+NexUI["1c"] = Instance.new("UICorner", NexUI["1b"]);
+NexUI["1c"]["CornerRadius"] = UDim.new(0.30000001192092896, 0);
+
+-- NRay.TopBar.ProfileMenu.Title.UIGradient
+NexUI["1d"] = Instance.new("UIGradient", NexUI["1b"]);
+NexUI["1d"]["Rotation"] = 90;
+NexUI["1d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(154, 154, 154)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(231, 231, 231))};
+
+-- NRay.TopBar.ProfileMenu.Title.TextLabel
+NexUI["1e"] = Instance.new("TextLabel", NexUI["1b"]);
+NexUI["1e"]["TextWrapped"] = true;
+NexUI["1e"]["BorderSizePixel"] = 0;
+NexUI["1e"]["TextScaled"] = true;
+NexUI["1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["1e"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+NexUI["1e"]["TextSize"] = 14;
+NexUI["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["1e"]["AutomaticSize"] = Enum.AutomaticSize.X;
+NexUI["1e"]["Size"] = UDim2.new(0.7192937135696411, 0, 0.41530051827430725, 0);
+NexUI["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["1e"]["Text"] = [[DarkRay]];
+NexUI["1e"]["BackgroundTransparency"] = 1;
+NexUI["1e"]["Position"] = UDim2.new(0.13402166962623596, 0, 0.27320244908332825, 0);
+
+-- NRay.TopBar.TopBarClose
+NexUI["1f"] = Instance.new("TextButton", NexUI["2"]);
+NexUI["1f"]["Active"] = false;
+NexUI["1f"]["BorderSizePixel"] = 0;
+NexUI["1f"]["AutoButtonColor"] = false;
+NexUI["1f"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["1f"]["Selectable"] = false;
+NexUI["1f"]["Size"] = UDim2.new(0.08402203768491745, 0, 0.4803149402141571, 0);
+NexUI["1f"]["Name"] = [[TopBarClose]];
+NexUI["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["1f"]["Text"] = [[]];
+NexUI["1f"]["Position"] = UDim2.new(0.915977954864502, 0, 0.5196850299835205, 0);
+
+-- NRay.TopBar.TopBarClose.UICorner
+NexUI["20"] = Instance.new("UICorner", NexUI["1f"]);
+NexUI["20"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
+
+-- NRay.TopBar.TopBarClose.UIGradient
+NexUI["21"] = Instance.new("UIGradient", NexUI["1f"]);
+NexUI["21"]["Rotation"] = 90;
+NexUI["21"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(117, 117, 117)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(218, 218, 218))};
+
+-- NRay.TopBar.TopBarClose.idk
+NexUI["22"] = Instance.new("Frame", NexUI["1f"]);
+NexUI["22"]["BorderSizePixel"] = 0;
+NexUI["22"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["22"]["Size"] = UDim2.new(0.2622910141944885, 0, 1, 0);
+NexUI["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["22"]["Position"] = UDim2.new(0.000002001152552111307, 0, 0, 0);
+NexUI["22"]["Name"] = [[idk]];
+
+-- NRay.TopBar.TopBarClose.idk.UIGradient
+NexUI["23"] = Instance.new("UIGradient", NexUI["22"]);
+NexUI["23"]["Rotation"] = 90;
+NexUI["23"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(117, 117, 117)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(218, 218, 218))};
+
+-- NRay.TopBar.TopBarClose.UIAspectRatioConstraint
+NexUI["24"] = Instance.new("UIAspectRatioConstraint", NexUI["1f"]);
+
+
+-- NRay.TopBar.TopBarClose.ImageLabel
+NexUI["25"] = Instance.new("ImageLabel", NexUI["1f"]);
+NexUI["25"]["BorderSizePixel"] = 0;
+NexUI["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["25"]["Image"] = [[rbxassetid://14122651741]];
+NexUI["25"]["LayoutOrder"] = 1;
+NexUI["25"]["Size"] = UDim2.new(0.5081987380981445, 0, 0.5971601009368896, 0);
+NexUI["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["25"]["BackgroundTransparency"] = 1;
+NexUI["25"]["Position"] = UDim2.new(0.24589963257312775, 0, 0.23339086771011353, 0);
+
+-- NRay.TopBar.TopBarClose.ImageLabel.UIAspectRatioConstraint
+NexUI["26"] = Instance.new("UIAspectRatioConstraint", NexUI["25"]);
+NexUI["26"]["AspectRatio"] = 0.9836804866790771;
+
+-- NRay.TopBar.UIAspectRatioConstraint
+NexUI["27"] = Instance.new("UIAspectRatioConstraint", NexUI["2"]);
+NexUI["27"]["AspectRatio"] = 5.724700927734375;
+
+-- NRay.MainBar
+NexUI["28"] = Instance.new("Frame", NexUI["1"]);
+NexUI["28"]["BorderSizePixel"] = 0;
+NexUI["28"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["28"]["Size"] = UDim2.new(0.5404488444328308, 0, 0.5745577812194824, 0);
+NexUI["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["28"]["Position"] = UDim2.new(0.23000000417232513, 0, -0.6119999885559082, 0);
+NexUI["28"]["Name"] = [[MainBar]];
+
+-- NRay.MainBar.UICorner
+NexUI["29"] = Instance.new("UICorner", NexUI["28"]);
+NexUI["29"]["CornerRadius"] = UDim.new(0.029999999329447746, 0);
+
+-- NRay.MainBar.UIGradient
+NexUI["2a"] = Instance.new("UIGradient", NexUI["28"]);
+NexUI["2a"]["Rotation"] = 90;
+NexUI["2a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(90, 90, 90)),ColorSequenceKeypoint.new(0.231, Color3.fromRGB(154, 154, 154)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.MainBar.UIAspectRatioConstraint
+NexUI["2b"] = Instance.new("UIAspectRatioConstraint", NexUI["28"]);
+NexUI["2b"]["AspectRatio"] = 1.7326968908309937;
+
+-- NRay.MainBar.DropShadowHolder
+NexUI["2c"] = Instance.new("Frame", NexUI["28"]);
+NexUI["2c"]["ZIndex"] = 0;
+NexUI["2c"]["BorderSizePixel"] = 0;
+NexUI["2c"]["BackgroundTransparency"] = 1;
+NexUI["2c"]["LayoutOrder"] = -1;
+NexUI["2c"]["Size"] = UDim2.new(1, 0, 1, 0);
+NexUI["2c"]["Name"] = [[DropShadowHolder]];
+
+-- NRay.MainBar.DropShadowHolder.DropShadow
+NexUI["2d"] = Instance.new("ImageLabel", NexUI["2c"]);
+NexUI["2d"]["ZIndex"] = 0;
+NexUI["2d"]["BorderSizePixel"] = 0;
+NexUI["2d"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+NexUI["2d"]["ScaleType"] = Enum.ScaleType.Slice;
+NexUI["2d"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["2d"]["ImageTransparency"] = 0.5;
+NexUI["2d"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+NexUI["2d"]["Image"] = [[rbxassetid://6014261993]];
+NexUI["2d"]["Size"] = UDim2.new(1, 47, 1, 47);
+NexUI["2d"]["Name"] = [[DropShadow]];
+NexUI["2d"]["BackgroundTransparency"] = 1;
+NexUI["2d"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- NRay.MainBar.Logo
+NexUI["2e"] = Instance.new("ImageLabel", NexUI["28"]);
+NexUI["2e"]["BorderSizePixel"] = 0;
+NexUI["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["2e"]["Image"] = [[rbxassetid://14133403065]];
+NexUI["2e"]["Size"] = UDim2.new(0.18741475045681, 0, 0.3247329592704773, 0);
+NexUI["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["2e"]["Name"] = [[Logo]];
+NexUI["2e"]["BackgroundTransparency"] = 1;
+NexUI["2e"]["Position"] = UDim2.new(0.3991934061050415, 0, 0.33447495102882385, 0);
+
+-- NRay.MainBar.Logo.UIGradient
+NexUI["2f"] = Instance.new("UIGradient", NexUI["2e"]);
+NexUI["2f"]["Rotation"] = 90;
+NexUI["2f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(5, 6, 23))};
+
+-- NRay.Folder
+NexUI["30"] = Instance.new("Folder", NexUI["1"]);
+
+
+-- NRay.Folder.TabReserved
+NexUI["31"] = Instance.new("ScrollingFrame", NexUI["30"]);
+NexUI["31"]["Active"] = true;
+NexUI["31"]["BorderSizePixel"] = 0;
+NexUI["31"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+NexUI["31"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 36);
+NexUI["31"]["VerticalScrollBarPosition"] = Enum.VerticalScrollBarPosition.Left;
+NexUI["31"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+NexUI["31"]["BackgroundTransparency"] = 1;
+NexUI["31"]["Size"] = UDim2.new(1, 0, 0.9599999785423279, 0);
+NexUI["31"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["31"]["ScrollBarThickness"] = 0;
+NexUI["31"]["Position"] = UDim2.new(0, 0, 0.03999999910593033, 0);
+NexUI["31"]["Visible"] = false;
+NexUI["31"]["Name"] = [[TabReserved]];
+
+-- NRay.Folder.TabReserved.UIListLayout
+NexUI["32"] = Instance.new("UIListLayout", NexUI["31"]);
+NexUI["32"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+NexUI["32"]["Padding"] = UDim.new(0.014999999664723873, 0);
+NexUI["32"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- NRay.Folder.TabButtonReserved
+NexUI["33"] = Instance.new("ImageButton", NexUI["30"]);
+NexUI["33"]["BorderSizePixel"] = 0;
+NexUI["33"]["AutoButtonColor"] = false;
+NexUI["33"]["BackgroundColor3"] = Color3.fromRGB(42, 42, 58);
+NexUI["33"]["Size"] = UDim2.new(0.19896680116653442, 0, 0.6315789818763733, 0);
+NexUI["33"]["Name"] = [[TabButtonReserved]];
+NexUI["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["33"]["Visible"] = false;
+NexUI["33"]["Position"] = UDim2.new(0.015000020153820515, 0, 0.18421050906181335, 0);
+
+-- NRay.Folder.TabButtonReserved.UICorner
+NexUI["34"] = Instance.new("UICorner", NexUI["33"]);
+NexUI["34"]["CornerRadius"] = UDim.new(0.30000001192092896, 0);
+
+-- NRay.Folder.TabButtonReserved.Frame
+NexUI["35"] = Instance.new("Frame", NexUI["33"]);
+NexUI["35"]["BorderSizePixel"] = 0;
+NexUI["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["35"]["BackgroundTransparency"] = 1;
+NexUI["35"]["LayoutOrder"] = 1;
+NexUI["35"]["Size"] = UDim2.new(0.6113507151603699, 0, 1.0000001192092896, 0);
+NexUI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["35"]["Position"] = UDim2.new(0.26662877202033997, 0, -4.950767973355141e-08, 0);
+NexUI["35"]["AutomaticSize"] = Enum.AutomaticSize.X;
+
+-- NRay.Folder.TabButtonReserved.Frame.TextLabel
+NexUI["36"] = Instance.new("TextLabel", NexUI["35"]);
+NexUI["36"]["TextWrapped"] = true;
+NexUI["36"]["BorderSizePixel"] = 0;
+NexUI["36"]["TextScaled"] = true;
+NexUI["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["36"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["36"]["TextSize"] = 14;
+NexUI["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["36"]["AutomaticSize"] = Enum.AutomaticSize.X;
+NexUI["36"]["Size"] = UDim2.new(-0.145383819937706, 0, 0.415300577878952, 0);
+NexUI["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["36"]["Text"] = [[Tab1]];
+NexUI["36"]["BackgroundTransparency"] = 1;
+NexUI["36"]["Position"] = UDim2.new(-1.2657674551010132, 0, 0.37021857500076294, 0);
+
+-- NRay.Folder.TabButtonReserved.Frame.UIListLayout
+NexUI["37"] = Instance.new("UIListLayout", NexUI["35"]);
+NexUI["37"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+NexUI["37"]["FillDirection"] = Enum.FillDirection.Horizontal;
+NexUI["37"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+NexUI["37"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- NRay.Folder.TabButtonReserved.UIGradient
+NexUI["38"] = Instance.new("UIGradient", NexUI["33"]);
+NexUI["38"]["Rotation"] = 90;
+NexUI["38"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(154, 154, 154)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(231, 231, 231))};
+
+-- NRay.Folder.TabButtonReserved.ImageLabel
+NexUI["39"] = Instance.new("ImageLabel", NexUI["33"]);
+NexUI["39"]["BorderSizePixel"] = 0;
+NexUI["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["39"]["Size"] = UDim2.new(0.19903095066547394, 0, 0.606557309627533, 0);
+NexUI["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["39"]["BackgroundTransparency"] = 1;
+NexUI["39"]["Position"] = UDim2.new(0.1134648397564888, 0, 0.19672130048274994, 0);
+
+-- NRay.Folder.TabButtonReserved.ImageLabel.UIAspectRatioConstraint
+NexUI["3a"] = Instance.new("UIAspectRatioConstraint", NexUI["39"]);
+NexUI["3a"]["AspectRatio"] = 0.9842342734336853;
+
+-- NRay.Folder.TabButtonReserved.UIListLayout
+NexUI["3b"] = Instance.new("UIListLayout", NexUI["33"]);
+NexUI["3b"]["VerticalAlignment"] = Enum.VerticalAlignment.Center;
+NexUI["3b"]["FillDirection"] = Enum.FillDirection.Horizontal;
+NexUI["3b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- NRay.Folder.TabButtonReserved.UIPadding
+NexUI["3c"] = Instance.new("UIPadding", NexUI["33"]);
+NexUI["3c"]["PaddingLeft"] = UDim.new(0.10999999940395355, 0);
+
+-- NRay.Folder.Dropdown
+NexUI["3d"] = Instance.new("Frame", NexUI["30"]);
+NexUI["3d"]["BorderSizePixel"] = 0;
+NexUI["3d"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["3d"]["BackgroundTransparency"] = 0.4000000059604645;
+NexUI["3d"]["Size"] = UDim2.new(0.9614325165748596, 0, 0.2624756097793579, 0);
+NexUI["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["3d"]["Position"] = UDim2.new(0.019283747300505638, 0, 0.12373435497283936, 0);
+NexUI["3d"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+NexUI["3d"]["Visible"] = false;
+NexUI["3d"]["Name"] = [[Dropdown]];
+
+-- NRay.Folder.Dropdown.UICorner
+NexUI["3e"] = Instance.new("UICorner", NexUI["3d"]);
+NexUI["3e"]["CornerRadius"] = UDim.new(0.03999999910593033, 0);
+
+-- NRay.Folder.Dropdown.UIGradient
+NexUI["3f"] = Instance.new("UIGradient", NexUI["3d"]);
+NexUI["3f"]["Rotation"] = 90;
+NexUI["3f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(89, 89, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(139, 139, 139))};
+
+-- NRay.Folder.Dropdown.Title
+NexUI["40"] = Instance.new("TextLabel", NexUI["3d"]);
+NexUI["40"]["TextWrapped"] = true;
+NexUI["40"]["BorderSizePixel"] = 0;
+NexUI["40"]["TextScaled"] = true;
+NexUI["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["40"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["40"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["40"]["TextSize"] = 14;
+NexUI["40"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["40"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.19094853103160858, 0);
+NexUI["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["40"]["Text"] = [[Dropdown]];
+NexUI["40"]["Name"] = [[Title]];
+NexUI["40"]["BackgroundTransparency"] = 1;
+NexUI["40"]["Position"] = UDim2.new(0.017191976308822632, 0, 0.10911344736814499, 0);
+
+-- NRay.Folder.Dropdown.Description
+NexUI["41"] = Instance.new("TextLabel", NexUI["3d"]);
+NexUI["41"]["TextWrapped"] = true;
+NexUI["41"]["BorderSizePixel"] = 0;
+NexUI["41"]["TextScaled"] = true;
+NexUI["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["41"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["41"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["41"]["TextSize"] = 14;
+NexUI["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["41"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.15457738935947418, 0);
+NexUI["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["41"]["Text"] = [[List of stuffs.]];
+NexUI["41"]["Name"] = [[Description]];
+NexUI["41"]["BackgroundTransparency"] = 1;
+NexUI["41"]["Position"] = UDim2.new(0.011461317539215088, 0, 0.7547013759613037, 0);
+
+-- NRay.Folder.Dropdown.DropdownBar
+NexUI["42"] = Instance.new("Frame", NexUI["3d"]);
+NexUI["42"]["BorderSizePixel"] = 0;
+NexUI["42"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["42"]["LayoutOrder"] = 10;
+NexUI["42"]["Size"] = UDim2.new(0.9684813618659973, 0, 0.29096919298171997, 0);
+NexUI["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["42"]["Position"] = UDim2.new(0.014326647855341434, 0, 0.34552592039108276, 0);
+NexUI["42"]["Name"] = [[DropdownBar]];
+
+-- NRay.Folder.Dropdown.DropdownBar.UICorner
+NexUI["43"] = Instance.new("UICorner", NexUI["42"]);
+NexUI["43"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
+
+-- NRay.Folder.Dropdown.DropdownBar.UIGradient
+NexUI["44"] = Instance.new("UIGradient", NexUI["42"]);
+NexUI["44"]["Rotation"] = 90;
+NexUI["44"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(117, 117, 117)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Dropdown.DropdownBar.UIStroke
+NexUI["45"] = Instance.new("UIStroke", NexUI["42"]);
+NexUI["45"]["Color"] = Color3.fromRGB(40, 45, 62);
+
+-- NRay.Folder.Dropdown.DropdownBar.Icon
+NexUI["46"] = Instance.new("ImageLabel", NexUI["42"]);
+NexUI["46"]["BorderSizePixel"] = 0;
+NexUI["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["46"]["Image"] = [[rbxassetid://14122651741]];
+NexUI["46"]["Size"] = UDim2.new(0.028106508776545525, 0, 0.59375, 0);
+NexUI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["46"]["Name"] = [[Icon]];
+NexUI["46"]["Rotation"] = 180;
+NexUI["46"]["BackgroundTransparency"] = 1;
+NexUI["46"]["Position"] = UDim2.new(0.9589999914169312, 0, 0.21899999678134918, 0);
+
+-- NRay.Folder.Dropdown.DropdownBar.Icon.UIAspectRatioConstraint
+NexUI["47"] = Instance.new("UIAspectRatioConstraint", NexUI["46"]);
+
+
+-- NRay.Folder.Dropdown.DropdownBar.Open
+NexUI["48"] = Instance.new("TextLabel", NexUI["42"]);
+NexUI["48"]["TextWrapped"] = true;
+NexUI["48"]["BorderSizePixel"] = 0;
+NexUI["48"]["TextScaled"] = true;
+NexUI["48"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39);
+NexUI["48"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["48"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["48"]["Size"] = UDim2.new(1, 0, 0.59375, 0);
+NexUI["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["48"]["Text"] = [[none]];
+NexUI["48"]["Name"] = [[Open]];
+NexUI["48"]["BackgroundTransparency"] = 1;
+NexUI["48"]["Position"] = UDim2.new(0, 0, 0.21875, 0);
+
+-- NRay.Folder.Dropdown.DropdownBar.Trigger
+NexUI["49"] = Instance.new("TextButton", NexUI["42"]);
+NexUI["49"]["BorderSizePixel"] = 0;
+NexUI["49"]["AutoButtonColor"] = false;
+NexUI["49"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["49"]["Selectable"] = false;
+NexUI["49"]["Size"] = UDim2.new(1, 0, 1, 0);
+NexUI["49"]["LayoutOrder"] = 10;
+NexUI["49"]["Name"] = [[Trigger]];
+NexUI["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["49"]["Text"] = [[]];
+NexUI["49"]["BackgroundTransparency"] = 1;
+
+-- NRay.Folder.Dropdown.Box
+NexUI["4a"] = Instance.new("Frame", NexUI["3d"]);
+NexUI["4a"]["BorderSizePixel"] = 0;
+NexUI["4a"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["4a"]["LayoutOrder"] = 10;
+NexUI["4a"]["Size"] = UDim2.new(0.9700000286102295, 0, 0, 0);
+NexUI["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["4a"]["Position"] = UDim2.new(0.014326647855341434, 0, 0.6362887620925903, 0);
+NexUI["4a"]["Visible"] = false;
+NexUI["4a"]["Name"] = [[Box]];
+
+-- NRay.Folder.Dropdown.Box.UIGradient
+NexUI["4b"] = Instance.new("UIGradient", NexUI["4a"]);
+NexUI["4b"]["Rotation"] = 90;
+NexUI["4b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(117, 117, 117)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Dropdown.Box.UIStroke
+NexUI["4c"] = Instance.new("UIStroke", NexUI["4a"]);
+NexUI["4c"]["Color"] = Color3.fromRGB(40, 45, 62);
+
+-- NRay.Folder.Dropdown.Box.UICorner
+NexUI["4d"] = Instance.new("UICorner", NexUI["4a"]);
+NexUI["4d"]["CornerRadius"] = UDim.new(0.05999999865889549, 0);
+
+-- NRay.Folder.Dropdown.Box.ScrollingFrame
+NexUI["4e"] = Instance.new("ScrollingFrame", NexUI["4a"]);
+NexUI["4e"]["Active"] = true;
+NexUI["4e"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+NexUI["4e"]["BorderSizePixel"] = 0;
+NexUI["4e"]["CanvasSize"] = UDim2.new(0, 0, 0.10000000149011612, 0);
+NexUI["4e"]["MidImage"] = [[]];
+NexUI["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["4e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+NexUI["4e"]["BackgroundTransparency"] = 1;
+NexUI["4e"]["Size"] = UDim2.new(1, 0, 1, 0);
+NexUI["4e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["4e"]["ScrollBarThickness"] = 0;
+
+-- NRay.Folder.Dropdown.Box.ScrollingFrame.UIListLayout
+NexUI["4f"] = Instance.new("UIListLayout", NexUI["4e"]);
+NexUI["4f"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center;
+NexUI["4f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- NRay.Folder.Keybind
+NexUI["50"] = Instance.new("Frame", NexUI["30"]);
+NexUI["50"]["Active"] = true;
+NexUI["50"]["BorderSizePixel"] = 0;
+NexUI["50"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["50"]["BackgroundTransparency"] = 0.4000000059604645;
+NexUI["50"]["Size"] = UDim2.new(0.9614325165748596, 0, 0.2624756097793579, 0);
+NexUI["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["50"]["Position"] = UDim2.new(0.019283747300505638, 0, 0.12373435497283936, 0);
+NexUI["50"]["Visible"] = false;
+NexUI["50"]["Name"] = [[Keybind]];
+
+-- NRay.Folder.Keybind.UICorner
+NexUI["51"] = Instance.new("UICorner", NexUI["50"]);
+NexUI["51"]["CornerRadius"] = UDim.new(0.03999999910593033, 0);
+
+-- NRay.Folder.Keybind.UIGradient
+NexUI["52"] = Instance.new("UIGradient", NexUI["50"]);
+NexUI["52"]["Rotation"] = 90;
+NexUI["52"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(113, 113, 113)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(194, 194, 194))};
+
+-- NRay.Folder.Keybind.Title
+NexUI["53"] = Instance.new("TextLabel", NexUI["50"]);
+NexUI["53"]["TextWrapped"] = true;
+NexUI["53"]["BorderSizePixel"] = 0;
+NexUI["53"]["TextScaled"] = true;
+NexUI["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["53"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["53"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["53"]["TextSize"] = 14;
+NexUI["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["53"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.19094853103160858, 0);
+NexUI["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["53"]["Text"] = [[Keybind]];
+NexUI["53"]["Name"] = [[Title]];
+NexUI["53"]["BackgroundTransparency"] = 1;
+NexUI["53"]["Position"] = UDim2.new(0.017191976308822632, 0, 0.10911344736814499, 0);
+
+-- NRay.Folder.Keybind.Description
+NexUI["54"] = Instance.new("TextLabel", NexUI["50"]);
+NexUI["54"]["TextWrapped"] = true;
+NexUI["54"]["BorderSizePixel"] = 0;
+NexUI["54"]["TextScaled"] = true;
+NexUI["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["54"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["54"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["54"]["TextSize"] = 14;
+NexUI["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["54"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.15457738935947418, 0);
+NexUI["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["54"]["Text"] = [[Press this square and enter any key to bind!]];
+NexUI["54"]["Name"] = [[Description]];
+NexUI["54"]["BackgroundTransparency"] = 1;
+NexUI["54"]["Position"] = UDim2.new(0.012893982231616974, 0, 0.7092373967170715, 0);
+
+-- NRay.Folder.Keybind.Bind
+NexUI["55"] = Instance.new("Frame", NexUI["50"]);
+NexUI["55"]["Active"] = true;
+NexUI["55"]["BorderSizePixel"] = 0;
+NexUI["55"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["55"]["Size"] = UDim2.new(0.14899714291095734, 0, 0.29096919298171997, 0);
+NexUI["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["55"]["Position"] = UDim2.new(0.014326647855341434, 0, 0.34552592039108276, 0);
+NexUI["55"]["Name"] = [[Bind]];
+
+-- NRay.Folder.Keybind.Bind.UICorner
+NexUI["56"] = Instance.new("UICorner", NexUI["55"]);
+NexUI["56"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
+
+-- NRay.Folder.Keybind.Bind.UIGradient
+NexUI["57"] = Instance.new("UIGradient", NexUI["55"]);
+NexUI["57"]["Rotation"] = 90;
+NexUI["57"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(117, 117, 117)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Keybind.Bind.UIStroke
+NexUI["58"] = Instance.new("UIStroke", NexUI["55"]);
+NexUI["58"]["Color"] = Color3.fromRGB(40, 45, 62);
+
+-- NRay.Folder.Keybind.Bind.Button
+NexUI["59"] = Instance.new("TextButton", NexUI["55"]);
+NexUI["59"]["TextWrapped"] = true;
+NexUI["59"]["ZIndex"] = 5;
+NexUI["59"]["BorderSizePixel"] = 0;
+NexUI["59"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["59"]["TextScaled"] = true;
+NexUI["59"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39);
+NexUI["59"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["59"]["TextColor3"] = Color3.fromRGB(160, 160, 160);
+NexUI["59"]["Selectable"] = false;
+NexUI["59"]["Size"] = UDim2.new(1, 0, 0.59375, 0);
+NexUI["59"]["Name"] = [[Button]];
+NexUI["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["59"]["Text"] = [[key]];
+NexUI["59"]["Position"] = UDim2.new(0, 0, 0.21875, 0);
+NexUI["59"]["BackgroundTransparency"] = 0.9900000095367432;
+
+-- NRay.Folder.Label
+NexUI["5a"] = Instance.new("Frame", NexUI["30"]);
+NexUI["5a"]["BorderSizePixel"] = 0;
+NexUI["5a"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["5a"]["Size"] = UDim2.new(0.9614325165748596, 0, 0.07873434573411942, 0);
+NexUI["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["5a"]["Position"] = UDim2.new(0.019283747300505638, 0, 0.01806684397161007, 0);
+NexUI["5a"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+NexUI["5a"]["Visible"] = false;
+NexUI["5a"]["Name"] = [[Label]];
+
+-- NRay.Folder.Label.UICorner
+NexUI["5b"] = Instance.new("UICorner", NexUI["5a"]);
+NexUI["5b"]["CornerRadius"] = UDim.new(0.33000001311302185, 0);
+
+-- NRay.Folder.Label.UIGradient
+NexUI["5c"] = Instance.new("UIGradient", NexUI["5a"]);
+NexUI["5c"]["Rotation"] = 90;
+NexUI["5c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(166, 166, 166)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Label.Title
+NexUI["5d"] = Instance.new("TextLabel", NexUI["5a"]);
+NexUI["5d"]["TextWrapped"] = true;
+NexUI["5d"]["BorderSizePixel"] = 0;
+NexUI["5d"]["TextScaled"] = true;
+NexUI["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["5d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["5d"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["5d"]["TextSize"] = 14;
+NexUI["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["5d"]["Size"] = UDim2.new(0.9668599367141724, 0, 0.5928126573562622, 0);
+NexUI["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["5d"]["Text"] = [[This is a Label]];
+NexUI["5d"]["Name"] = [[Title]];
+NexUI["5d"]["BackgroundTransparency"] = 1;
+NexUI["5d"]["Position"] = UDim2.new(0.018000036478042603, 0, 0.22100010514259338, 0);
+
+-- NRay.Folder.Slider
+NexUI["5e"] = Instance.new("Frame", NexUI["30"]);
+NexUI["5e"]["BorderSizePixel"] = 0;
+NexUI["5e"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["5e"]["BackgroundTransparency"] = 0.4000000059604645;
+NexUI["5e"]["Size"] = UDim2.new(0.9614325165748596, 0, 0.2624756097793579, 0);
+NexUI["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["5e"]["Position"] = UDim2.new(0.019283747300505638, 0, 0.12373435497283936, 0);
+NexUI["5e"]["Visible"] = false;
+NexUI["5e"]["Name"] = [[Slider]];
+
+-- NRay.Folder.Slider.UICorner
+NexUI["5f"] = Instance.new("UICorner", NexUI["5e"]);
+NexUI["5f"]["CornerRadius"] = UDim.new(0.03999999910593033, 0);
+
+-- NRay.Folder.Slider.UIGradient
+NexUI["60"] = Instance.new("UIGradient", NexUI["5e"]);
+NexUI["60"]["Rotation"] = 90;
+NexUI["60"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(108, 108, 108)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(232, 232, 232))};
+
+-- NRay.Folder.Slider.Title
+NexUI["61"] = Instance.new("TextLabel", NexUI["5e"]);
+NexUI["61"]["TextWrapped"] = true;
+NexUI["61"]["BorderSizePixel"] = 0;
+NexUI["61"]["TextScaled"] = true;
+NexUI["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["61"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["61"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["61"]["TextSize"] = 14;
+NexUI["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["61"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.19094853103160858, 0);
+NexUI["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["61"]["Text"] = [[Speed]];
+NexUI["61"]["Name"] = [[Title]];
+NexUI["61"]["BackgroundTransparency"] = 1;
+NexUI["61"]["Position"] = UDim2.new(0.017191976308822632, 0, 0.10911344736814499, 0);
+
+-- NRay.Folder.Slider.ActualSlider
+NexUI["62"] = Instance.new("Frame", NexUI["5e"]);
+NexUI["62"]["BorderSizePixel"] = 0;
+NexUI["62"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39);
+NexUI["62"]["Size"] = UDim2.new(0.9684813618659973, 0, 0.29096919298171997, 0);
+NexUI["62"]["ClipsDescendants"] = true;
+NexUI["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["62"]["Position"] = UDim2.new(0.014326647855341434, 0, 0.34552592039108276, 0);
+NexUI["62"]["Name"] = [[ActualSlider]];
+
+-- NRay.Folder.Slider.ActualSlider.UICorner
+NexUI["63"] = Instance.new("UICorner", NexUI["62"]);
+NexUI["63"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
+
+-- NRay.Folder.Slider.ActualSlider.UIGradient
+NexUI["64"] = Instance.new("UIGradient", NexUI["62"]);
+NexUI["64"]["Rotation"] = 90;
+NexUI["64"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(64, 64, 64)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(148, 148, 148))};
+
+-- NRay.Folder.Slider.ActualSlider.UIStroke
+NexUI["65"] = Instance.new("UIStroke", NexUI["62"]);
+NexUI["65"]["Color"] = Color3.fromRGB(0, 255, 39);
+
+-- NRay.Folder.Slider.ActualSlider.Fill
+NexUI["66"] = Instance.new("Frame", NexUI["62"]);
+NexUI["66"]["BorderSizePixel"] = 0;
+NexUI["66"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39);
+NexUI["66"]["Size"] = UDim2.new(1, 0, 1, 0);
+NexUI["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["66"]["Position"] = UDim2.new(-0.0010000000474974513, 0, 0.029999999329447746, 0);
+NexUI["66"]["Name"] = [[Fill]];
+
+-- NRay.Folder.Slider.ActualSlider.Fill.UICorner
+NexUI["67"] = Instance.new("UICorner", NexUI["66"]);
+NexUI["67"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
+
+-- NRay.Folder.Slider.ActualSlider.Fill.UIGradient
+NexUI["68"] = Instance.new("UIGradient", NexUI["66"]);
+NexUI["68"]["Rotation"] = 90;
+NexUI["68"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(107, 107, 107)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Slider.ActualSlider.Trigger
+NexUI["69"] = Instance.new("TextButton", NexUI["62"]);
+NexUI["69"]["BorderSizePixel"] = 0;
+NexUI["69"]["AutoButtonColor"] = false;
+NexUI["69"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39);
+NexUI["69"]["Selectable"] = false;
+NexUI["69"]["Size"] = UDim2.new(1, 0, 1, 0);
+NexUI["69"]["LayoutOrder"] = 5;
+NexUI["69"]["Name"] = [[Trigger]];
+NexUI["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["69"]["Text"] = [[]];
+NexUI["69"]["Position"] = UDim2.new(-0.0010000000474974513, 0, 0.029999999329447746, 0);
+NexUI["69"]["BackgroundTransparency"] = 1;
+
+-- NRay.Folder.Slider.ActualSlider.Trigger.UICorner
+NexUI["6a"] = Instance.new("UICorner", NexUI["69"]);
+NexUI["6a"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
+
+-- NRay.Folder.Slider.ActualSlider.Trigger.UIGradient
+NexUI["6b"] = Instance.new("UIGradient", NexUI["69"]);
+NexUI["6b"]["Rotation"] = 90;
+NexUI["6b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(166, 166, 166)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Slider.ActualSlider.Title
+NexUI["6c"] = Instance.new("TextLabel", NexUI["62"]);
+NexUI["6c"]["TextWrapped"] = true;
+NexUI["6c"]["BorderSizePixel"] = 0;
+NexUI["6c"]["TextScaled"] = true;
+NexUI["6c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["6c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["6c"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["6c"]["TextSize"] = 14;
+NexUI["6c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["6c"]["LayoutOrder"] = 3;
+NexUI["6c"]["Size"] = UDim2.new(0.9582196474075317, 0, 0.5971987247467041, 0);
+NexUI["6c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["6c"]["Text"] = [[100]];
+NexUI["6c"]["Name"] = [[Title]];
+NexUI["6c"]["BackgroundTransparency"] = 1;
+NexUI["6c"]["Position"] = UDim2.new(0.023000000044703484, 0, 0.23100000619888306, 0);
+
+-- NRay.Folder.Slider.Description
+NexUI["6d"] = Instance.new("TextLabel", NexUI["5e"]);
+NexUI["6d"]["TextWrapped"] = true;
+NexUI["6d"]["BorderSizePixel"] = 0;
+NexUI["6d"]["TextScaled"] = true;
+NexUI["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["6d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["6d"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["6d"]["TextSize"] = 14;
+NexUI["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["6d"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.15457738935947418, 0);
+NexUI["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["6d"]["Text"] = [[Changes your walkspeed.]];
+NexUI["6d"]["Name"] = [[Description]];
+NexUI["6d"]["BackgroundTransparency"] = 1;
+NexUI["6d"]["Position"] = UDim2.new(0.015759311616420746, 0, 0.7274229526519775, 0);
+
+-- NRay.Folder.Textbox
+NexUI["6e"] = Instance.new("Frame", NexUI["30"]);
+NexUI["6e"]["BorderSizePixel"] = 0;
+NexUI["6e"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["6e"]["BackgroundTransparency"] = 0.4000000059604645;
+NexUI["6e"]["Size"] = UDim2.new(0.9614325165748596, 0, 0.2624756097793579, 0);
+NexUI["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["6e"]["Position"] = UDim2.new(0.019283747300505638, 0, 0.12373435497283936, 0);
+NexUI["6e"]["Visible"] = false;
+NexUI["6e"]["Name"] = [[Textbox]];
+
+-- NRay.Folder.Textbox.UICorner
+NexUI["6f"] = Instance.new("UICorner", NexUI["6e"]);
+NexUI["6f"]["CornerRadius"] = UDim.new(0.03999999910593033, 0);
+
+-- NRay.Folder.Textbox.UIGradient
+NexUI["70"] = Instance.new("UIGradient", NexUI["6e"]);
+NexUI["70"]["Rotation"] = 90;
+NexUI["70"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(89, 89, 89)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(139, 139, 139))};
+
+-- NRay.Folder.Textbox.Title
+NexUI["71"] = Instance.new("TextLabel", NexUI["6e"]);
+NexUI["71"]["TextWrapped"] = true;
+NexUI["71"]["BorderSizePixel"] = 0;
+NexUI["71"]["TextScaled"] = true;
+NexUI["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["71"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["71"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["71"]["TextSize"] = 14;
+NexUI["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["71"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.19094853103160858, 0);
+NexUI["71"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["71"]["Text"] = [[Textbox]];
+NexUI["71"]["Name"] = [[Title]];
+NexUI["71"]["BackgroundTransparency"] = 1;
+NexUI["71"]["Position"] = UDim2.new(0.017191976308822632, 0, 0.10911344736814499, 0);
+
+-- NRay.Folder.Textbox.Description
+NexUI["72"] = Instance.new("TextLabel", NexUI["6e"]);
+NexUI["72"]["TextWrapped"] = true;
+NexUI["72"]["BorderSizePixel"] = 0;
+NexUI["72"]["TextScaled"] = true;
+NexUI["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["72"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["72"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["72"]["TextSize"] = 14;
+NexUI["72"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["72"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.15457738935947418, 0);
+NexUI["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["72"]["Text"] = [[Input and yeah.]];
+NexUI["72"]["Name"] = [[Description]];
+NexUI["72"]["BackgroundTransparency"] = 1;
+NexUI["72"]["Position"] = UDim2.new(0.012893982231616974, 0, 0.7092373967170715, 0);
+
+-- NRay.Folder.Textbox.TextboxBar
+NexUI["73"] = Instance.new("Frame", NexUI["6e"]);
+NexUI["73"]["BorderSizePixel"] = 0;
+NexUI["73"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["73"]["Size"] = UDim2.new(0.9684813618659973, 0, 0.29096919298171997, 0);
+NexUI["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["73"]["Position"] = UDim2.new(0.014326647855341434, 0, 0.34552592039108276, 0);
+NexUI["73"]["Name"] = [[TextboxBar]];
+
+-- NRay.Folder.Textbox.TextboxBar.UICorner
+NexUI["74"] = Instance.new("UICorner", NexUI["73"]);
+NexUI["74"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
+
+-- NRay.Folder.Textbox.TextboxBar.UIGradient
+NexUI["75"] = Instance.new("UIGradient", NexUI["73"]);
+NexUI["75"]["Rotation"] = 90;
+NexUI["75"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(117, 117, 117)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Textbox.TextboxBar.UIStroke
+NexUI["76"] = Instance.new("UIStroke", NexUI["73"]);
+NexUI["76"]["Color"] = Color3.fromRGB(40, 45, 62);
+
+-- NRay.Folder.Textbox.TextboxBar.ActualTextbox
+NexUI["77"] = Instance.new("TextBox", NexUI["73"]);
+NexUI["77"]["PlaceholderColor3"] = Color3.fromRGB(155, 155, 155);
+NexUI["77"]["BorderSizePixel"] = 0;
+NexUI["77"]["TextWrapped"] = true;
+NexUI["77"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["77"]["TextScaled"] = true;
+NexUI["77"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39);
+NexUI["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["77"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["77"]["BackgroundTransparency"] = 1;
+NexUI["77"]["PlaceholderText"] = [[Input Here...]];
+NexUI["77"]["Size"] = UDim2.new(1, 0, 0.59375, 0);
+NexUI["77"]["Selectable"] = false;
+NexUI["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["77"]["Text"] = [[]];
+NexUI["77"]["Position"] = UDim2.new(0, 0, 0.21875, 0);
+NexUI["77"]["Name"] = [[ActualTextbox]];
+
+-- NRay.Folder.Toggle
+NexUI["78"] = Instance.new("Frame", NexUI["30"]);
+NexUI["78"]["Active"] = true;
+NexUI["78"]["BorderSizePixel"] = 0;
+NexUI["78"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["78"]["BackgroundTransparency"] = 0.4000000059604645;
+NexUI["78"]["Size"] = UDim2.new(0.9614325165748596, 0, 0.15495234727859497, 0);
+NexUI["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["78"]["Position"] = UDim2.new(0.019283747300505638, 0, 0.6786856055259705, 0);
+NexUI["78"]["Visible"] = false;
+NexUI["78"]["Name"] = [[Toggle]];
+
+-- NRay.Folder.Toggle.UICorner
+NexUI["79"] = Instance.new("UICorner", NexUI["78"]);
+NexUI["79"]["CornerRadius"] = UDim.new(0.03999999910593033, 0);
+
+-- NRay.Folder.Toggle.UIGradient
+NexUI["7a"] = Instance.new("UIGradient", NexUI["78"]);
+NexUI["7a"]["Rotation"] = 90;
+NexUI["7a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(109, 109, 109)),ColorSequenceKeypoint.new(0.765, Color3.fromRGB(181, 181, 181)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(217, 217, 217))};
+
+-- NRay.Folder.Toggle.Title
+NexUI["7b"] = Instance.new("TextLabel", NexUI["78"]);
+NexUI["7b"]["TextWrapped"] = true;
+NexUI["7b"]["BorderSizePixel"] = 0;
+NexUI["7b"]["RichText"] = true;
+NexUI["7b"]["TextScaled"] = true;
+NexUI["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["7b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["7b"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["7b"]["TextSize"] = 14;
+NexUI["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["7b"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.323449969291687, 0);
+NexUI["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["7b"]["Text"] = [[Toggle]];
+NexUI["7b"]["Name"] = [[Title]];
+NexUI["7b"]["BackgroundTransparency"] = 1;
+NexUI["7b"]["Position"] = UDim2.new(0.015759311616420746, 0, 0.18482854962348938, 0);
+
+-- NRay.Folder.Toggle.Description
+NexUI["7c"] = Instance.new("TextLabel", NexUI["78"]);
+NexUI["7c"]["TextWrapped"] = true;
+NexUI["7c"]["BorderSizePixel"] = 0;
+NexUI["7c"]["TextScaled"] = true;
+NexUI["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["7c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["7c"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["7c"]["TextSize"] = 14;
+NexUI["7c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["7c"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.26184046268463135, 0);
+NexUI["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["7c"]["Text"] = [[Toggle I and O xd]];
+NexUI["7c"]["Name"] = [[Description]];
+NexUI["7c"]["BackgroundTransparency"] = 1;
+NexUI["7c"]["Position"] = UDim2.new(0.011461318470537663, 0, 0.5852904319763184, 0);
+
+-- NRay.Folder.Toggle.Label
+NexUI["7d"] = Instance.new("Frame", NexUI["78"]);
+NexUI["7d"]["BorderSizePixel"] = 0;
+NexUI["7d"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39);
+NexUI["7d"]["Size"] = UDim2.new(0.03868212550878525, 0, 0.42860323190689087, 0);
+NexUI["7d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["7d"]["Position"] = UDim2.new(0.92550128698349, 0, 0.27990657091140747, 0);
+NexUI["7d"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+NexUI["7d"]["Name"] = [[Label]];
+
+-- NRay.Folder.Toggle.Label.UICorner
+NexUI["7e"] = Instance.new("UICorner", NexUI["7d"]);
+NexUI["7e"]["CornerRadius"] = UDim.new(0.33000001311302185, 0);
+
+-- NRay.Folder.Toggle.Label.UIGradient
+NexUI["7f"] = Instance.new("UIGradient", NexUI["7d"]);
+NexUI["7f"]["Rotation"] = 90;
+NexUI["7f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(166, 166, 166)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Toggle.Label.UIStroke
+NexUI["80"] = Instance.new("UIStroke", NexUI["7d"]);
+NexUI["80"]["Color"] = Color3.fromRGB(40, 45, 62);
+NexUI["80"]["Thickness"] = 2.4000000953674316;
+NexUI["80"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- NRay.Folder.Toggle.Label.Label
+NexUI["81"] = Instance.new("TextButton", NexUI["7d"]);
+NexUI["81"]["BorderSizePixel"] = 0;
+NexUI["81"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["81"]["Selectable"] = false;
+NexUI["81"]["Size"] = UDim2.new(1, 0, 1, 0);
+NexUI["81"]["Name"] = [[Label]];
+NexUI["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["81"]["Text"] = [[]];
+NexUI["81"]["AutomaticSize"] = Enum.AutomaticSize.Y;
+NexUI["81"]["BackgroundTransparency"] = 1;
+
+-- NRay.Folder.Toggle.Label.Label.UICorner
+NexUI["82"] = Instance.new("UICorner", NexUI["81"]);
+NexUI["82"]["CornerRadius"] = UDim.new(0.33000001311302185, 0);
+
+-- NRay.Folder.Toggle.Label.Label.UIGradient
+NexUI["83"] = Instance.new("UIGradient", NexUI["81"]);
+NexUI["83"]["Rotation"] = 90;
+NexUI["83"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(166, 166, 166)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.Button
+NexUI["84"] = Instance.new("TextButton", NexUI["30"]);
+NexUI["84"]["BorderSizePixel"] = 0;
+NexUI["84"]["AutoButtonColor"] = false;
+NexUI["84"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["84"]["Selectable"] = false;
+NexUI["84"]["Visible"] = false;
+NexUI["84"]["Size"] = UDim2.new(0.9614325165748596, 0, 0.15495234727859497, 0);
+NexUI["84"]["Name"] = [[Button]];
+NexUI["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["84"]["Text"] = [[]];
+NexUI["84"]["Position"] = UDim2.new(0.019283747300505638, 0, 0.6786856055259705, 0);
+NexUI["84"]["BackgroundTransparency"] = 0.4000000059604645;
+
+-- NRay.Folder.Button.UICorner
+NexUI["85"] = Instance.new("UICorner", NexUI["84"]);
+NexUI["85"]["CornerRadius"] = UDim.new(0.03999999910593033, 0);
+
+-- NRay.Folder.Button.UIGradient
+NexUI["86"] = Instance.new("UIGradient", NexUI["84"]);
+NexUI["86"]["Rotation"] = 90;
+NexUI["86"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(109, 109, 109)),ColorSequenceKeypoint.new(0.765, Color3.fromRGB(181, 181, 181)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(217, 217, 217))};
+
+-- NRay.Folder.Button.Title
+NexUI["87"] = Instance.new("TextLabel", NexUI["84"]);
+NexUI["87"]["TextWrapped"] = true;
+NexUI["87"]["BorderSizePixel"] = 0;
+NexUI["87"]["RichText"] = true;
+NexUI["87"]["TextScaled"] = true;
+NexUI["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["87"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["87"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["87"]["TextSize"] = 14;
+NexUI["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["87"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.323449969291687, 0);
+NexUI["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["87"]["Text"] = [[Button]];
+NexUI["87"]["Name"] = [[Title]];
+NexUI["87"]["BackgroundTransparency"] = 1;
+NexUI["87"]["Position"] = UDim2.new(0.015759311616420746, 0, 0.18482854962348938, 0);
+
+-- NRay.Folder.Button.Description
+NexUI["88"] = Instance.new("TextLabel", NexUI["84"]);
+NexUI["88"]["TextWrapped"] = true;
+NexUI["88"]["BorderSizePixel"] = 0;
+NexUI["88"]["TextScaled"] = true;
+NexUI["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["88"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["88"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["88"]["TextSize"] = 14;
+NexUI["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["88"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.26184046268463135, 0);
+NexUI["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["88"]["Text"] = [[Hello! i'm a button :D]];
+NexUI["88"]["Name"] = [[Description]];
+NexUI["88"]["BackgroundTransparency"] = 1;
+NexUI["88"]["Position"] = UDim2.new(0.011461318470537663, 0, 0.5852904319763184, 0);
+
+-- NRay.Folder.DropdownButton
+NexUI["89"] = Instance.new("TextButton", NexUI["30"]);
+NexUI["89"]["Active"] = false;
+NexUI["89"]["BorderSizePixel"] = 0;
+NexUI["89"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["89"]["Selectable"] = false;
+NexUI["89"]["Visible"] = false;
+NexUI["89"]["Size"] = UDim2.new(0.9995859265327454, 0, 0.17368526756763458, 0);
+NexUI["89"]["Name"] = [[DropdownButton]];
+NexUI["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["89"]["Position"] = UDim2.new(0.08656254410743713, 0, 0, 0);
+
+-- NRay.Folder.DropdownButton.UICorner
+NexUI["8a"] = Instance.new("UICorner", NexUI["89"]);
+NexUI["8a"]["CornerRadius"] = UDim.new(0.20000000298023224, 0);
+
+-- NRay.Folder.DropdownButton.UIGradient
+NexUI["8b"] = Instance.new("UIGradient", NexUI["89"]);
+NexUI["8b"]["Rotation"] = 90;
+NexUI["8b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(117, 117, 117)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+-- NRay.Folder.DropdownButton.UIStroke
+NexUI["8c"] = Instance.new("UIStroke", NexUI["89"]);
+NexUI["8c"]["Color"] = Color3.fromRGB(40, 45, 62);
+
+-- NRay.Folder.DropdownButton.name
+NexUI["8d"] = Instance.new("TextLabel", NexUI["89"]);
+NexUI["8d"]["TextWrapped"] = true;
+NexUI["8d"]["BorderSizePixel"] = 0;
+NexUI["8d"]["TextScaled"] = true;
+NexUI["8d"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 39);
+NexUI["8d"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["8d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["8d"]["TextColor3"] = Color3.fromRGB(160, 160, 160);
+NexUI["8d"]["Size"] = UDim2.new(1, 0, 0.59375, 0);
+NexUI["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["8d"]["Text"] = [[none]];
+NexUI["8d"]["Name"] = [[name]];
+NexUI["8d"]["BackgroundTransparency"] = 1;
+NexUI["8d"]["Position"] = UDim2.new(0, 0, 0.21875, 0);
+
+-- NRay.Button
+NexUI["8e"] = Instance.new("TextButton", NexUI["1"]);
+NexUI["8e"]["BorderSizePixel"] = 0;
+NexUI["8e"]["AutoButtonColor"] = false;
+NexUI["8e"]["BackgroundColor3"] = Color3.fromRGB(40, 45, 62);
+NexUI["8e"]["Selectable"] = false;
+NexUI["8e"]["Visible"] = false;
+NexUI["8e"]["Size"] = UDim2.new(0.9614325165748596, 0, 0.15495234727859497, 0);
+NexUI["8e"]["Name"] = [[Button]];
+NexUI["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["8e"]["Text"] = [[]];
+NexUI["8e"]["Position"] = UDim2.new(0.019283747300505638, 0, 0.6786856055259705, 0);
+NexUI["8e"]["BackgroundTransparency"] = 0.4000000059604645;
+
+-- NRay.Button.UICorner
+NexUI["8f"] = Instance.new("UICorner", NexUI["8e"]);
+NexUI["8f"]["CornerRadius"] = UDim.new(0.03999999910593033, 0);
+
+-- NRay.Button.UIGradient
+NexUI["90"] = Instance.new("UIGradient", NexUI["8e"]);
+NexUI["90"]["Rotation"] = 90;
+NexUI["90"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(109, 109, 109)),ColorSequenceKeypoint.new(0.765, Color3.fromRGB(181, 181, 181)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(217, 217, 217))};
+
+-- NRay.Button.Title
+NexUI["91"] = Instance.new("TextLabel", NexUI["8e"]);
+NexUI["91"]["TextWrapped"] = true;
+NexUI["91"]["BorderSizePixel"] = 0;
+NexUI["91"]["RichText"] = true;
+NexUI["91"]["TextScaled"] = true;
+NexUI["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["91"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["91"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+NexUI["91"]["TextSize"] = 14;
+NexUI["91"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["91"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.323449969291687, 0);
+NexUI["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["91"]["Text"] = [[Button]];
+NexUI["91"]["Name"] = [[Title]];
+NexUI["91"]["BackgroundTransparency"] = 1;
+NexUI["91"]["Position"] = UDim2.new(0.015759311616420746, 0, 0.18482854962348938, 0);
+
+-- NRay.Button.Description
+NexUI["92"] = Instance.new("TextLabel", NexUI["8e"]);
+NexUI["92"]["TextWrapped"] = true;
+NexUI["92"]["BorderSizePixel"] = 0;
+NexUI["92"]["TextScaled"] = true;
+NexUI["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["92"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+NexUI["92"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+NexUI["92"]["TextSize"] = 14;
+NexUI["92"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+NexUI["92"]["Size"] = UDim2.new(0.9656160473823547, 0, 0.26184046268463135, 0);
+NexUI["92"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+NexUI["92"]["Text"] = [[Hello! i'm a button :D]];
+NexUI["92"]["Name"] = [[Description]];
+NexUI["92"]["BackgroundTransparency"] = 1;
+NexUI["92"]["Position"] = UDim2.new(0.011461318470537663, 0, 0.5852904319763184, 0);
+
+-- NRay.Library
+NexUI["93"] = Instance.new("ModuleScript", NexUI["1"]);
+NexUI["93"]["Name"] = [[Library]];
+
+-- Require NexUI wrapper
+local DRR_REQUIRE = require;
+local DRR_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = DRR_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return DRR_REQUIRE(Module);
+end
+
+DRR_MODULES[NexUI["93"]] = {
+Closure = function()
+    local script = NexUI["93"];
+local UILIB = {}
+local parent  = script.Parent
+local reserved = parent.Folder
+UILIB.__index = UILIB
+
+local listening = false
+local twServ = game:GetService("TweenService")
+local UIS = game:GetService("UserInputService")
+local GlobalColor1 = Color3.fromRGB(39, 44, 61)
+local GlobalColor2 = Color3.fromRGB(0, 255, 38)
+local closed = false
+
+parent.TopBar.ProfileMenu.PlayerProfile.TextLabel.Text = game:GetService("Players").LocalPlayer.DisplayName
+parent.TopBar.ProfileMenu.PlayerProfile.ImageLabel.Image = game:GetService("Players"):GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100)
+
+
+function UILIB:Load(name, img, direction)
+	local self = setmetatable({}, UILIB)
+	task.spawn(function()
+			local tw = twServ:Create(parent.MainBar, TweenInfo.new(0.4, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.212, 0) })
+			local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.7, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.23, 0,0.012, 0) })
+			tw:Play()
+			tw.Completed:Wait()
+			task.wait(0.3)
+			tw2:Play()
+	end)
+        task.spawn(function()
+	     while true do
+		task.wait(0.1)
+		parent.TopBar.ProfileMenu.Clock.TextLabel.Text = os.date("%H:%m")
+	     end
+        end)
+	parent.TopBar.ProfileMenu.Title.TextLabel.Text = name
+	if img then
+		parent.MainBar.Logo.Image = img
+	elseif img == "Default" then
+
+	else
+		parent.MainBar.Logo.Image = ""
+		end
+
+
+	parent.TopBar.TopBarClose.MouseButton1Click:Connect(function()
+		if closed == false then
+			closed = true
+			local tw = twServ:Create(parent.MainBar, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,-0.612, 0) })
+			local tw3 = twServ:Create(parent.TopBar.TopBarClose, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.916, 0,0.95, 0) })
+			local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,-0.173, 0) })
+			local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 180 })
+
+			tw:Play()
+			tw.Completed:Wait()
+			tw2:Play()
+			task.wait(0.1)
+			twRotate:Play()
+			tw3:Play()
+			
+		elseif closed == true then
+			closed = false
+			local tw = twServ:Create(parent.MainBar, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.212, 0) })
+			local tw3 = twServ:Create(parent.TopBar.TopBarClose, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.916, 0,0.52, 0) })
+			local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.012, 0) })
+			local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 0 })
+
+			tw:Play()
+			tw.Completed:Wait()
+			tw2:Play()
+			task.wait(0.1)
+			twRotate:Play()
+			tw3:Play()
+		end
+	end)
+
+
+	function self:Open()
+		local tw = twServ:Create(parent.MainBar, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.212, 0) })
+		local tw3 = twServ:Create(parent.TopBar.TopBarClose, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.916, 0,0.52, 0) })
+		local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.012, 0) })
+		local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 0 })
+
+		tw:Play()
+		tw.Completed:Wait()
+		tw2:Play()
+		task.wait(0.1)
+		twRotate:Play()
+		tw3:Play()
+	end
+
+	function self:Close()
+		local tw = twServ:Create(parent.MainBar, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,-0.612, 0) })
+		local tw3 = twServ:Create(parent.TopBar.TopBarClose, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.916, 0,0.95, 0) })
+		local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,-0.173, 0) })
+		local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 180 })
+
+		tw:Play()
+		tw.Completed:Wait()
+		tw2:Play()
+		task.wait(0.1)
+		twRotate:Play()
+		tw3:Play()
+	end
+	function self:HideCloseButton()
+		NexUI["1f"].Visible = false
+	end
+        function self:Hide()
+		DDR["1"].Enabled = false
+	end
+	function self:Show()
+		DDR["1"].Enabled = true
+        end
+	function self:Toggle()
+		if closed == false then
+			closed = true
+			local tw = twServ:Create(parent.MainBar, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,-0.612, 0) })
+			local tw3 = twServ:Create(parent.TopBar.TopBarClose, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.916, 0,0.95, 0) })
+			local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,-0.173, 0) })
+			local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 180 })
+
+			tw:Play()
+			tw.Completed:Wait()
+			tw2:Play()
+			tw2.Completed:Wait()
+			twRotate:Play()
+			tw3:Play()
+		elseif closed == true then
+			closed = false
+			local tw = twServ:Create(parent.MainBar, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.212, 0) })
+			local tw3 = twServ:Create(parent.TopBar.TopBarClose, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Position = UDim2.new(0.916, 0,0.52, 0) })
+			local tw2 = twServ:Create(parent.TopBar, TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), { Position = UDim2.new(0.23, 0,0.012, 0) })
+			local twRotate = twServ:Create(parent.TopBar.TopBarClose.ImageLabel, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.In), { Rotation = 0 })
+
+			tw:Play()
+			tw.Completed:Wait()
+			tw2:Play()
+			tw2.Completed:Wait()
+			twRotate:Play()
+			tw3:Play()
+		end
+	end
+	function self:SetTheme(color, color2)
+		for i,v in pairs(parent:GetChildren()) do
+			if v:IsA("GuiObject") then
+				pcall(function()
+					if v.BackgroundColor3 == Color3.fromRGB(39, 44, 61) then
+						v.BackgroundColor3 = color
+						GlobalColor1 = color
+					elseif v.BackgroundColor3 == Color3.fromRGB(0, 255, 38) then
+						v.BackgroundColor3 = color2
+						GlobalColor2 = color2
+					end
+				end)
+			end
+		end
+	end
+
+end
+
+
+
+
+
+
+
+
+
+
+
+function UILIB.newTab(name, img)	
+	local self = setmetatable({}, UILIB)
+
+	local newTab = parent.Folder.TabReserved:Clone()
+	newTab.Parent = parent.MainBar
+	newTab.Name = name
+	newTab.Visible = false
+
+	local newTabBtn = parent.Folder.TabButtonReserved:Clone()
+	newTabBtn.Parent = parent.TopBar.ScrollingFrame
+	newTabBtn.Name = name or "Tab"..#parent.MainBar:GetChildren() - 4
+	newTabBtn.Frame.TextLabel.Text = name
+	if img then
+		newTabBtn.ImageLabel.Image = img
+	else
+		newTabBtn.ImageLabel.Image = ""
+	end
+	newTabBtn.Visible = true
+
+	newTabBtn.MouseButton1Click:Connect(function()
+		for i,v in pairs(parent.TopBar.ScrollingFrame:GetChildren()) do
+			if v:IsA("ImageButton") then
+				local vTab = parent.MainBar:FindFirstChild(v.Name)
+				if v.Name ~= name then
+					local twBtn = twServ:Create(v, TweenInfo.new(0.2), { Transparency = 0.75})
+
+					twBtn:Play()
+
+					vTab.Visible = false
+				elseif v.Name == name then
+					vTab.Visible = true
+					local twBtn = twServ:Create(v, TweenInfo.new(0.2), { Transparency = 0 })
+
+					twBtn:Play()
+
+				end
+
+			end
+		end
+	end)
+
+	function self.newButton(name, desc, func)
+		local newbtn = reserved.Button:Clone()
+		newbtn.Parent = newTab
+		newbtn.Title.Text = name
+		newbtn.Description.Text = desc
+		newbtn.Visible = true
+		newbtn.Name = name
+
+		newbtn.MouseEnter:Connect(function()
+			local twBtn = twServ:Create(newbtn, TweenInfo.new(0.2), { Transparency = 0 })
+
+			twBtn:Play()
+		end)
+		newbtn.MouseLeave:Connect(function()
+			local twBtn = twServ:Create(newbtn, TweenInfo.new(0.2), { Transparency = 0.4 })
+
+			twBtn:Play()
+		end)
+		newbtn.MouseButton1Click:Connect(func)
+	end
+
+	function self.newLabel(text)
+		local newLabel = reserved.Label:Clone()
+		newLabel.Parent = newTab
+		newLabel.Visible = true
+		newLabel.Title.Text = text
+
+		return newLabel.Title
+	end
+
+        function self.editLabel(newLabel, text)
+		newLabel.Parent = newTab
+		newLabel.Visible = true
+		newLabel.Title.Text = text
+
+		return newLabel.Title
+        end
+
+	function self.newInput(name, desc, func)
+		local newInput = reserved.Textbox:Clone()
+		local textbox = newInput.TextboxBar.ActualTextbox
+
+		newInput.MouseEnter:Connect(function()
+			local twBtn = twServ:Create(newInput, TweenInfo.new(0.2), { Transparency = 0 })
+
+			twBtn:Play()
+		end)
+		newInput.MouseLeave:Connect(function()
+			local twBtn = twServ:Create(newInput, TweenInfo.new(0.2), { Transparency = 0.4 })
+
+			twBtn:Play()
+
+
+		end)
+
+		newInput.Visible = true
+		newInput.Parent = newTab
+		newInput.Title.Text = name
+		newInput.Description.Text = desc
+		newInput.Name = name
+
+		textbox.FocusLost:Connect(function()
+			func(textbox.Text)
+		end)
+
+	end
+
+	function self.newKeybind(name, desc, func)
+		local newKey = reserved.Keybind:Clone()
+
+
+		newKey.MouseEnter:Connect(function()
+			local twBtn = twServ:Create(newKey, TweenInfo.new(0.2), { Transparency = 0 })
+
+			twBtn:Play()
+		end)
+		newKey.MouseLeave:Connect(function()
+			local twBtn = twServ:Create(newKey, TweenInfo.new(0.2), { Transparency = 0.4 })
+
+			twBtn:Play()
+		end)
+		newKey.Parent = newTab
+		newKey.Title.Text = name
+		newKey.Name = name
+		newKey.Description.Text = desc
+		newKey.Visible =  true
+
+		local listening = false
+		local a
+
+		newKey.Bind.Button.MouseButton1Click:Connect(function()
+			listening = true
+
+
+			local function Loop()
+				if listening then
+					newKey.Bind.Button.Text = "."
+				end
+
+				task.wait(0.5)
+				if listening then
+					newKey.Bind.Button.Text = ".."
+				end
+				task.wait(0.5)
+				if listening then
+					newKey.Bind.Button.Text = "..."
+				end
+				task.wait(0.5)
+			end
+
+			task.spawn(function()
+				while listening do
+					Loop()
+				end
+			end)
+
+			-- Connect the InputBegan event
+			a = game:GetService("UserInputService").InputBegan:Connect(function(input, processed)
+				if input.UserInputType == Enum.UserInputType.Keyboard then
+					newKey.Bind.Button.Text = input.KeyCode.Name
+					listening = false
+					a:Disconnect()
+					func(input)
+				elseif input.UserInputType == Enum.UserInputType.MouseButton1 or
+					input.UserInputType == Enum.UserInputType.MouseButton2 or
+					input.UserInputType == Enum.UserInputType.MouseButton3 then
+					newKey.Bind.Button.Text = input.UserInputType.Name
+					listening = false
+					a:Disconnect()
+					func(input)
+				end
+			end)
+		end)
+	end
+
+
+	function self.newSlider(name, desc, max, manageSlider, func)
+		local newSlider = reserved.Slider:Clone()
+
+		newSlider.MouseEnter:Connect(function()
+			local twBtn = twServ:Create(newSlider, TweenInfo.new(0.2), { Transparency = 0 })
+
+			twBtn:Play()
+		end)
+		newSlider.MouseLeave:Connect(function()
+			local twBtn = twServ:Create(newSlider, TweenInfo.new(0.2), { Transparency = 0.4 })
+
+			twBtn:Play()
+		end)
+		newSlider.Visible = true
+		newSlider.Name = name
+		newSlider.Parent = newTab
+		newSlider.Title.Text = name
+		newSlider.Description.Text = desc
+
+		local Mouse = game.Players.LocalPlayer:GetMouse()
+		local tweenServ = twServ
+
+		local Trigger = newSlider.ActualSlider.Trigger
+		local Label = newSlider.ActualSlider.Title
+		local Fill = newSlider.ActualSlider.Fill
+		local Parent = newSlider.ActualSlider
+
+		local perc
+		local Percent
+		local MouseDown = false
+		local delayTw = 0.3
+
+		local function Update()
+			MouseDown = true
+			repeat
+				task.wait()
+				Percent = math.clamp((Mouse.X - Parent.AbsolutePosition.X) / Parent.AbsoluteSize.X, 0, 1)
+				perc = math.round(Percent * max)
+				if manageSlider == false then
+					Label.Text = perc
+					func(perc)
+				elseif manageSlider == true then
+					Label.Text = perc
+					func(perc, Label)
+				end
+				local tween = tweenServ:Create(Fill, TweenInfo.new(delayTw, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { Size = UDim2.fromScale(Percent, 1) })
+				tween:Play()
+			until MouseDown == false
+		end
+
+		Trigger.MouseButton1Down:Connect(Update)
+
+		UIS.InputEnded:Connect(function(input)
+			if input.UserInputType ==  Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				MouseDown = false
+			end
+		end)
+
+	end
+	
+	function self.newToggle(title, desc, toggle, func)
+		local realToggle = toggle
+		local newToggle = reserved.Toggle:Clone()
+		newToggle.Parent = newTab
+		newToggle.Name = title
+		newToggle.Visible = true
+		newToggle.Title.Text = title
+		newToggle.Description.Text = desc
+		
+		
+		newToggle.MouseEnter:Connect(function()
+			local twBtn = twServ:Create(newToggle, TweenInfo.new(0.2), { Transparency = 0 })
+
+			twBtn:Play()
+		end)
+		newToggle.MouseLeave:Connect(function()
+			local twBtn = twServ:Create(newToggle, TweenInfo.new(0.2), { Transparency = 0.4 })
+
+			twBtn:Play()
+		end)
+		
+		
+		if realToggle == true then
+			newToggle.Label.BackgroundColor3 = GlobalColor2
+		elseif realToggle == false then
+			newToggle.Label.BackgroundColor3 = GlobalColor1
+		end
+		
+		
+		
+		newToggle.Label.Label.MouseButton1Click:Connect(function()
+			
+			if realToggle == true then
+				realToggle = false
+				local twColorOn = twServ:Create(newToggle.Label, TweenInfo.new(0.2), { BackgroundColor3 = GlobalColor1 })
+				twColorOn:Play()
+				
+				func(realToggle)
+			elseif realToggle == false then
+				realToggle = true
+				local twColorOn = twServ:Create(newToggle.Label, TweenInfo.new(0.2), { BackgroundColor3 = GlobalColor2 })
+				twColorOn:Play()
+				
+				func(realToggle)
+			end
+		end)
+		
+	end
+	
+	function self.newDropdown(name, desc, listTable, func)
+		local newdd = reserved.Dropdown:Clone()
+		newdd.Visible = true
+		newdd.Parent = newTab
+		
+		newdd.Name = name
+		newdd.Title.Text = name
+		newdd.Description.Text = desc
+		
+		for i, list in ipairs(listTable) do
+			local newddbtn = reserved.DropdownButton:Clone()
+			newddbtn.Visible = true
+			newddbtn.Parent = newdd.Box.ScrollingFrame
+
+			newddbtn.Name = list
+			newddbtn.name.Text = list
+			task.spawn(function()
+				newddbtn.MouseButton1Click:Connect(function()
+					newdd.DropdownBar.Open.Text = list
+					local twPos = twServ:Create(newdd.Box, TweenInfo.new(0.15), {Size = UDim2.new(0.97, 0,0, 0)})
+					twPos:Play()
+					twPos.Completed:Wait()
+					newdd.Box.Visible = false
+					func(list)
+				end)
+			end)
+		end		
+		
+		newdd.DropdownBar.Trigger.MouseButton1Click:Connect(function()
+			
+			
+			if newdd.Box.Visible == false then
+				newdd.Box.Visible = true
+				local twPos = twServ:Create(newdd.Box, TweenInfo.new(0.15), {Size = UDim2.new(0.97, 0,1.696, 0)})
+				twPos:Play()
+			elseif newdd.Box.Visible == true then
+				local twPos = twServ:Create(newdd.Box, TweenInfo.new(0.15), {Size = UDim2.new(0.97, 0,0, 0)})
+				twPos:Play()
+				twPos.Completed:Wait()
+				newdd.Box.Visible = false
+			end
+		end)
+	end
+
+	return self
+end
+
+
+
+
+
+
+
+
+return UILIB
+
+end;
+};
+
+return require(NexUI["93"]);
