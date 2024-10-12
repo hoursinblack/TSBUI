@@ -1,0 +1,106 @@
+local NxRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = NxRayLibrary:Load("TSB UI", "Default")
+
+local tab = NxRayLibrary.newTab("🏠Home", "ImageIdHere")
+
+tab.newButton("Gojo moveset (USE SAITAMA)", "The strongest sorcerer of today.", function()
+    game.Players.LocalPlayer.CharacterAdded:Connect(function()
+    -- Display a notification
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "I DIDNT MAKE THE GOJO SCRIPT!";
+        Text = "I did NOT create the gojo script!!!";
+        Duration = 5;
+    })
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/OtherScripts/main/BaldyToSorcerer/latest.lua"))()
+end)
+
+tab.newButton("Sukuna moveset (USE BLADE MASTER)", "The strongest sorcerer in history.", function()
+    game.Players.LocalPlayer.CharacterAdded:Connect(function()
+    -- Display a notification
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "I DIDNT MAKE THE SUKUNA SCRIPT!";
+        Text = "I did NOT create the sukuna script!!!";
+        Duration = 5;
+    })
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/zyrask/Nexus-Base/main/atomic-blademaster%20to%20sukuna"))()
+end)
+
+tab.newButton("APOPHENIA (USE METAL BAT)", "N/A", function()
+    game.Players.LocalPlayer.CharacterAdded:Connect(function()
+    -- Display a notification
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "I DIDNT MAKE THE APOPHENIA SCRIPT!";
+        Text = "I did NOT create the apophenia script!!!";
+        Duration = 5;
+    })
+    getgenv().Music = false 
+    getgenv().AttackQuality = 'High'
+
+    getgenv().ConstantSpeed = false
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua"))()
+end)
+
+tab.newButton("Walkspeed", "Makes you faster", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dreampoopo/scripts/main/jailbreakspeedandjump", true))()
+end)
+
+tab.newButton("Anti death counter", "Makes you immortal to death counter.", function()
+    game.Players.LocalPlayer.CharacterAdded:Connect(function()
+    -- Display a notification
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Exploit Detected";
+        Text = "You have been detected as an exploiter. If you continue, you may be banned.";
+        Duration = 5;
+    })
+    
+    workspace.FallenPartsDestroyHeight = "-nan"
+    game.Players.LocalPlayer.Character:WaitForChild("Humanoid").AnimationPlayed:Connect(function(d)
+        if d.Animation.AnimationId == "rbxassetid://11343250001" then
+            local ogcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            task.wait(3)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -100000, 0)
+            task.wait(3)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ogcf
+        end
+    end)
+end)
+end)
+
+tab.newButton("flying ability", "Makes you fly.", function()
+
+local NxRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = NxRayLibrary:Load("TSB UI", "Default")
+
+local tab = NxRayLibrary.newTab("🏠Home", "ImageIdHere")
+
+tab.newButton("Gojo moveset", "Gives you gojo's moveset", function()
+   
+end)
+
+tab.newButton("Walkspeed", "Makes you faster.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dreampoopo/scripts/main/jailbreakspeedandjump", true))()
+end)
+
+tab.newButton("Anti death counter", "Makes you immortal to death counter", function()
+    game.Players.LocalPlayer.CharacterAdded:Connect(function()
+    -- Display a notification
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Notification";
+        Text = "N/A";
+        Duration = 5;
+    })
+    
+    workspace.FallenPartsDestroyHeight = "-nan"
+    game.Players.LocalPlayer.Character:WaitForChild("Humanoid").AnimationPlayed:Connect(function(d)
+        if d.Animation.AnimationId == "rbxassetid://11343250001" then
+            local ogcf = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            task.wait(3)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, -100000, 0)
+            task.wait(3)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ogcf
+        end
+    end)
+end)
+end)
